@@ -1,0 +1,26 @@
+.faq-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+    overflow: auto;
+}
+
+.faq-item {
+    background-color: #f1f8e9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2e7d32;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    color: darkgreen;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #424242;
+    font-size: 15px;
+}
