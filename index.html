@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egerton University Library</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -16,8 +18,12 @@
                     <p>Transforming lives through quality Education</p>
                 </div>
             </div>
+
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-            <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+            <label for="nav-toggle" class="hamburger" aria-hidden="true">
+                <span></span>
+            </label>
+
             <nav>
                 <a href="index.html" class="active">Home</a>
                 <a href="catalogue/catalogue.html">Catalogue</a>
@@ -28,42 +34,98 @@
             </nav>
         </div>
     </header>
+    <main class="main-container">
 
-    <section class="hero">
-        <div class="container">
-            <h2>Start Your Studies</h2>
-            <p>Transforming lives through quality Education</p>
-        </div>
-    </section>
-
-    <section class="search-section">
-        <div class="container">
-            <input type="text" class="search-bar" placeholder="Search for books">
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>E-Resources</h3>
-                    <p>Access digital journals, databases, and online publications available 24/7.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Borrowing</h3>
-                    <p>Borrow physical books and materials with flexible lending periods.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Study Areas</h3>
-                    <p>Quiet study zones and collaborative spaces for your academic needs.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Reference Desk</h3>
-                    <p>Get assistance from our expert librarians for research and information needs.</p>
+        <section class="hero bg">
+            <div class="container">
+                <h2>Access Knowledge, Achieve Excellence.</h2>
+                <p>Your Gateway to Research, Resources, and Academic Success.</p>
+            </div>
+            <div>
+                <div class="container">
+                    <input type="text" class="search-bar"
+                        placeholder="Search the Library Catalogue, Databases, and Journals...">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>E-Resources</h3>
+                        <p>Access digital journals, databases (JSTOR, EBSCO), and online publications available 24/7
+                            from anywhere.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Borrowing</h3>
+                        <p>Borrow physical books and materials with flexible lending periods. Manage your loans online.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Study Areas</h3>
+                        <p>Quiet study zones, collaborative group spaces, and dedicated computer labs for your academic
+                            needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Reference Desk</h3>
+                        <p>Get personalized assistance from our expert librarians for research, citation, and
+                            information literacy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Academic Resources</h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>JSTOR Database</h4>
+                        <p>Full-text access to thousands of scholarly journals, books, and primary sources in the
+                            humanities and social sciences.</p>
+                        <a href="#">Access JSTOR &rarr;</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>EBSCOhost</h4>
+                        <p>A leading provider of research databases, e-journals, magazine subscriptions, and e-books
+                            across many subjects.</p>
+                        <a href="#">Access EBSCOhost &rarr;</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Institutional Repository</h4>
+                        <p>View Egerton University's theses, dissertations, faculty publications, and research output.
+                        </p>
+                        <a href="#">Explore Repository &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    <section class="news-events">-->
+        <!--        <div class="container">-->
+        <!--            <h2>News & Events</h2>-->
+        <!--            <div class="event-list">-->
+        <!--                <div class="event-item">-->
+        <!--                    <h4>New Acquisition: 2025 Engineering Texts</h4>-->
+        <!--                    <p>Date: December 10, 2025 | The library has acquired the latest editions of core Civil and Mechanical Engineering textbooks.</p>-->
+        <!--                </div>-->
+        <!--                <div class="event-item">-->
+        <!--                    <h4>Research & Citation Workshop</h4>-->
+        <!--                    <p>Date: December 15, 2025, 2:00 PM | Location: Main Library Computer Lab. Learn APA, MLA, and Chicago styles.</p>-->
+        <!--                </div>-->
+        <!--                <div class="event-item">-->
+        <!--                    <h4>Extended Study Hours for Exams</h4>-->
+        <!--                    <p>Date: Starting January 5, 2026 | The main reading halls will remain open until midnight.</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </section>-->
+
+    </main>
 
     <footer id="footer">
         <div class="container">
@@ -71,8 +133,17 @@
                 <div class="footer-section">
                     <h4>Contact Us</h4>
                     <p>Email: library@egerton.ac.ke</p>
-                    <a href="tel:+254757611486">Phone: +254 (0) 757611486</a>
+                    <a href="tel:+254757611486">Phone: 0757611486</a>
                 </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="catalogue/catalogue.html">Search Catalogue</a>
+                    <a href="#">My Library Account</a>
+                    <a href="#">Ask A Librarian</a>
+                    <a href="#">E-Resources A-Z</a>
+                </div>
+
                 <div class="footer-section">
                     <h4>Opening Hours</h4>
                     <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
@@ -90,5 +161,52 @@
             <p class="footer-bottom">&Group Neo All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form">
+                <h2>Welcome Back</h2>
+                <div class="input-group">
+                    <label>Username / Admin No.</label>
+                    <input type="text" id="login-admin" placeholder="admin" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="login-pass" placeholder="admin" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form" style="display: none;">
+                <h2>Create Account</h2>
+                <div class="input-group">
+                    <label>Admission Number</label>
+                    <input type="text" id="signup-adm" placeholder="S27/05500/24" required>
+                    <small>Format: S27/05500/24</small>
+                </div>
+                <div class="input-group">
+                    <label>Course</label>
+                    <input type="text" placeholder="e.g. Computer Science" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="signup-pass" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="header/auth.js"></script>
 </body>
+
 </html>

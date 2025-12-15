@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./history.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -32,28 +34,18 @@
 
     <section class="page-content">
         <div class="container">
-            <h2>Our History</h2>
-            <p>The Egerton University Library was established in 1939 alongside the Egerton Farm School (now Egerton
-                University). Starting as a small collection serving agricultural studies, it has evolved into a modern
-                academic library system spanning multiple campuses.</p>
+            <div class="timeline-header">
+                <h2>Our History</h2>
+                <p>From a small Farm School to a World-Class University. Discover our journey.</p>
+            </div>
 
-
-            <p>In 1986, with Egerton's elevation to university status, the library underwent significant expansion. The
-                main library building was completed in 1990, providing expanded facilities for the growing student
-                population.</p>
-
-            <p>In 2000, the library expanded to include a new information desk, enhancing the library's services to
-                students and faculty. In 2010, the library expanded to include a new digital repository, enhancing the
-                library's capabilities for research and academic collaboration.</p>
-
-
-            <p>Today, our library system includes specialized collections in agriculture, science, technology, and
-                humanities, serving over 10,000 users annually with both physical and digital resources. We continue to
-                embrace technological advances while maintaining our commitment to academic excellence.</p>
-            <p>Our mission remains steadfast: to provide accessible, high-quality information services that support
-                teaching, learning, and research at all levels of the university community.</p>
+            <div class="timeline" id="timeline-container">
+                <!-- Timeline items rendered by JS -->
+            </div>
         </div>
     </section>
+
+    <script src="history.js"></script>
 
     <footer id="footer">
         <div class="container">
@@ -81,4 +73,5 @@
         </div>
     </footer>
 </body>
+
 </html>
