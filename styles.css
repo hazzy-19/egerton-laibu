@@ -2,11 +2,8 @@
 
 :root {
     --primary-color: #1b5e20;
-    /* Deep Forest Green */
     --secondary-color: #2e7d32;
-    /* Medium Green */
     --accent-color: #c0ca33;
-    /* Lime/Gold Accent */
     --text-dark: #1a1a1a;
     --text-light: #f5f5f5;
     --background-light: #f8f9fa;
@@ -16,7 +13,6 @@
     --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
     --font-main: 'Inter', sans-serif;
     --font-heading: 'Playfair Display', serif;
-    /* New Heading Font */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -45,12 +41,8 @@ body {
     padding: 0 24px;
 }
 
-/* -------------------------------------- */
-/* HEADER & AV */
-/* -------------------------------------- */
 header {
     background: rgba(27, 94, 32, 0.98);
-    /* Slightly less transparent for better contrast */
     color: var(--white);
     padding: 0.8rem 0;
     position: sticky;
@@ -113,16 +105,12 @@ nav a.active {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* NEW LOGIN BUTTON STYLE */
 .nav-login {
     background: var(--white) !important;
-    /* Crisp White */
     color: var(--primary-color) !important;
-    /* Green Text */
     font-weight: 700 !important;
     padding: 0.6rem 1.4rem !important;
     border-radius: 6px !important;
-    /* Pill shape but less circular */
     border: 1px solid transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -133,7 +121,6 @@ nav a.active {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Hamburger */
 .nav-toggle {
     display: none;
 }
@@ -143,15 +130,10 @@ nav a.active {
     cursor: pointer;
 }
 
-/* -------------------------------------- */
-/* HERO SECTION - REVISED */
-/* -------------------------------------- */
 .hero {
     background: #ffffff;
-    /* Clean White Background */
     color: var(--text-dark);
     padding: 8rem 0;
-    /* More spacing */
     text-align: center;
     position: relative;
     border-bottom: 1px solid #eee;
@@ -159,12 +141,10 @@ nav a.active {
 
 .hero h2 {
     font-family: var(--font-heading);
-    /* Playfair Display */
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
-    /* Green text on white */
     line-height: 1.1;
 }
 
@@ -182,10 +162,8 @@ nav a.active {
     padding: 1.25rem 2rem;
     font-size: 1.1rem;
     border: 2px solid #e0e0e0;
-    /* Subtle border */
     border-radius: 50px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    /* Soft shadow */
     transition: var(--transition);
     background: #fff;
     font-family: inherit;
@@ -201,9 +179,6 @@ nav a.active {
     color: #999;
 }
 
-/* -------------------------------------- */
-/* SERVICES & GRIDS */
-/* -------------------------------------- */
 .services,
 .featured-section,
 .news-events {
@@ -217,10 +192,8 @@ nav a.active {
     margin-bottom: 3rem;
     font-weight: 700;
     font-family: var(--font-heading);
-    /* Consistent headings */
 }
 
-/* Ensure h2 in sections use the new font too if generated dynamically or statically */
 .services h2,
 .featured-section h2,
 .news-events h2 {
@@ -296,9 +269,6 @@ nav a.active {
     text-decoration: underline;
 }
 
-/* -------------------------------------- */
-/* FOOTER */
-/* -------------------------------------- */
 footer {
     background: #111;
     color: #e0e0e0;
@@ -339,12 +309,8 @@ footer {
     color: #666;
 }
 
-/* -------------------------------------- */
-/* AUTH MODAL STYLES */
-/* -------------------------------------- */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -353,13 +319,11 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.6);
-    /* Black with opacity */
     backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
 }
 
-/* Modal Content */
 .modal-content {
     background-color: var(--white);
     margin: auto;
@@ -484,9 +448,6 @@ footer {
     transform: translateY(-2px);
 }
 
-/* -------------------------------------- */
-/* RESPONSIVE */
-/* -------------------------------------- */
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -513,10 +474,8 @@ footer {
         padding: 1rem;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         align-items: stretch;
-        /* Change from center to stretch */
     }
 
-    /* Fixed mobile button shape */
     .nav-login {
         display: block;
         text-align: center;
@@ -539,7 +498,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Remove white background on mobile links for cleaner look */
     nav a:hover,
     nav a.active {
         background: transparent;
