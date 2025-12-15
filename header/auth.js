@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Modal Elements
     const modal = document.getElementById('auth-modal');
     const loginBtn = document.getElementById('login-btn');
     const closeBtn = document.querySelector('.close-modal');
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
     const signupForm = document.getElementById('signup-form');
 
-    // Toggle Modal
     if (loginBtn) {
         loginBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -27,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Tab Switching
     authTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             authTabs.forEach(t => t.classList.remove('active'));
@@ -43,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Login Validation
     if (loginForm) {
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -61,20 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Sign Up Validation
     if (signupForm) {
         signupForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const admInput = document.getElementById('signup-adm').value;
             const passInput = document.getElementById('signup-pass').value;
 
-            // Regex for S27/05500/24 format
-            // S followed by digits, slash, digits, slash, digits
             const admRegex = /^[A-Z]\d{2}\/\d{5}\/\d{2}$/;
 
             if (admRegex.test(admInput)) {
                 alert('Sign Up Successful! Please log in.');
-                // Switch to login tab
                 authTabs[0].click();
             } else {
                 alert('Invalid Admission Number format. Expected: S27/05500/24');
