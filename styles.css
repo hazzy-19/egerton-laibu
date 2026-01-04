@@ -162,7 +162,7 @@ nav a.active {
     padding: 1.25rem 2rem;
     font-size: 1.1rem;
     border: 2px solid #e0e0e0;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
     background: #fff;
@@ -309,57 +309,68 @@ footer {
     color: #666;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(5px);
+/* Auth Page specific styles */
+.auth-body {
+    background: linear-gradient(135deg, rgba(27, 94, 32, 0.1), rgba(46, 125, 50, 0.1));
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    font-family: var(--font-main);
+    overflow: hidden;
 }
 
-.modal-content {
-    background-color: var(--white);
-    margin: auto;
-    padding: 2.5rem;
-    border-radius: 16px;
+.auth-container {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    max-width: 450px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    height: 90%;
+    /* Default mobile height */
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
     position: relative;
-    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    max-width: 500px;
+    /* Mobile limitation */
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.auth-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+    order: 2;
+    overflow-y: auto;
 }
 
-.close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
-    line-height: 1;
+.auth-right {
+    display: none;
 }
 
-.close-modal:hover {
-    color: #000;
+.auth-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 0.95rem;
 }
 
 .auth-tabs {
@@ -448,6 +459,54 @@ footer {
     transform: translateY(-2px);
 }
 
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.auth-footer a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.auth-footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .auth-container {
+        flex-direction: row;
+        width: 80vw;
+        /* 80% screen width as requested */
+        height: 80vh;
+        /* 80% screen height as requested */
+        max-width: 1200px;
+        /* Reasonable cap */
+        max-height: 800px;
+    }
+
+    .auth-left {
+        order: 1;
+        flex: 0 0 50%;
+    }
+
+    .auth-right {
+        display: block;
+        flex: 0 0 50%;
+        order: 2;
+        background-image: url('images/ba.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -496,11 +555,5 @@ footer {
 
     .hero p {
         font-size: 1rem;
-    }
-
-    nav a:hover,
-    nav a.active {
-        background: transparent;
-        color: var(--accent-color);
     }
 }

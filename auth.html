@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Egerton University Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-box">
+                <div class="auth-header">
+                    <h2>Welcome Back</h2>
+                    <p>Enter your details to access your library account</p>
+                </div>
+
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Sign In</button>
+                    <button class="auth-tab" data-tab="signup">Sign Up</button>
+                </div>
+
+                <form id="login-form">
+                    <div class="input-group">
+                        <label>Username / Admin No.</label>
+                        <input type="text" id="login-admin" placeholder="admin" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="login-pass" placeholder="admin" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+
+                <form id="signup-form" style="display: none;">
+                    <div class="input-group">
+                        <label>Admission Number</label>
+                        <input type="text" id="signup-adm" placeholder="S27/05500/24" required>
+                        <small>Format: S27/05500/24</small>
+                    </div>
+                    <div class="input-group">
+                        <label>Course</label>
+                        <input type="text" placeholder="e.g. Computer Science" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="signup-pass" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+
+                <div class="auth-footer">
+                    <a href="index.html">&larr; Back to Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="auth-right">
+            <!-- Image is set via CSS background or img tag if preferred, 
+                 but user asked for right side to be the image. -->
+        </div>
+    </div>
+
+    <script src="header/auth.js"></script>
+</body>
+
+</html>
