@@ -44,5 +44,5 @@ Project Status
 UI development started
 
 Base structure established
+thi is already done
 
-JavaScript functionality coming soon
