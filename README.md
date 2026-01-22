@@ -35,7 +35,10 @@ HTML5
 
 CSS3
 
-JavaScript (planned)
+JavaScript 
+
+javascript was imlemented to hold the books details in a arrray then we mapped through them
+we also used js to get a simple login autthentication logic 
 
 Project Status
 UI development started
