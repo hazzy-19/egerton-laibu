@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +8,88 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./catalogue.css">
 </head>
+
 <body>
-<header>
-    <div class="container">
-        <div class="logo-container">
-            <img src="https://studentportal.egerton.ac.ke/assets/images/Logo.png" alt="Logo" class="logo">
-            <div class="header-content">
-                <h1>Egerton University Library</h1>
-                <p>Transforming lives through quality Education</p>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://studentportal.egerton.ac.ke/assets/images/Logo.png" alt="Logo" class="logo">
+                <div class="header-content">
+                    <h1>Egerton University Library</h1>
+                    <p>Transforming lives through quality Education</p>
+                </div>
             </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+            <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./catalogue.html" class="active">Catalogue</a>
+                <a href="../faqs/faqs.html">FAQs</a>
+                <a href="../history/history.html">History</a>
+                <a href="../index.html#footer">Contact</a>
+            </nav>
         </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
-        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="./catalogue.html" class="active">Catalogue</a>
-            <a href="../faqs/faqs.html">FAQs</a>
-            <a href="../history/history.html">History</a>
-            <a href="../index.html#footer">Contact</a>
-        </nav>
-    </div>
-</header>
+    </header>
 
-<section class="page-content">
-    <div class="container">
-        <h2>Research</h2>
-        <div class="books-grid">
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="../images/r1.jpg" alt="Research Design (Creswell & Creswell)">
-                </div>
-                <div class="book-content">
-                    <h3>Research Design (Creswell & Creswell)</h3>
-                    <p class="book-description">Designing qualitative, quantitative, and mixed methods studies used across Egerton faculties.</p>
-                    <a href="#" class="get-button">Find in Library</a>
-                </div>
+    <section class="page-content">
+        <div class="container">
+            <div class="back-nav">
+                <a href="./catalogue.html">&larr; Back to Catalogue</a>
             </div>
-            <div class="book-card">
-                <div class="book-image">
-                    <img src="../images/r2.jpg" alt="Publication Manual of the APA (7th Edition)">
+            <h2>Research</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="../images/r1.jpg" alt="Research Design (Creswell & Creswell)">
+                    </div>
+                    <div class="book-content">
+                        <h3>Research Design (Creswell & Creswell)</h3>
+                        <p class="book-description">Designing qualitative, quantitative, and mixed methods studies used
+                            across Egerton faculties.</p>
+                        <a href="#" class="get-button">Find in Library</a>
+                    </div>
                 </div>
-                <div class="book-content">
-                    <h3>Publication Manual of the APA (7th Edition)</h3>
-                    <p class="book-description">Standards for scholarly writing, citations, and formatting for theses and papers.</p>
-                    <a href="#" class="get-button">Find in Library</a>
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="../images/r2.jpg" alt="Publication Manual of the APA (7th Edition)">
+                    </div>
+                    <div class="book-content">
+                        <h3>Publication Manual of the APA (7th Edition)</h3>
+                        <p class="book-description">Standards for scholarly writing, citations, and formatting for
+                            theses and papers.</p>
+                        <a href="#" class="get-button">Find in Library</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer id="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-                <p>Email: library@egerton.ac.ke</p>
-                <a href="tel:+254757611486">Phone: +254 (0) 757611486</a>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: library@egerton.ac.ke</p>
+                    <a href="tel:+254757611486">Phone: +254 (0) 757611486</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                    <p>Saturday: 8:00 AM - 10:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Main Campus</p>
+                    <p>Egerton University</p>
+                    <p>Njoro, Kenya</p>
+                    <p>Near the admin block</p>
+                </div>
             </div>
-            <div class="footer-section">
-                <h4>Opening Hours</h4>
-                <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
-                <p>Saturday: 8:00 AM - 10:00 PM</p>
-                <p>Sunday: Closed</p>
-            </div>
-            <div class="footer-section">
-                <h4>Location</h4>
-                <p>Main Campus</p>
-                <p>Egerton University</p>
-                <p>Njoro, Kenya</p>
-                <p>Near the admin block</p>
-            </div>
+            <p class="footer-bottom">&Group Neo All rights reserved.</p>
         </div>
-        <p class="footer-bottom">&Group Neo All rights reserved.</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>

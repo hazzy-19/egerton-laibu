@@ -117,3 +117,27 @@
 .get-button:hover {
     background: var(--secondary-color);
 }
+
+.back-nav {
+    margin-bottom: 1.5rem;
+}
+
+.back-nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.back-nav a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateX(-3px);
+}
